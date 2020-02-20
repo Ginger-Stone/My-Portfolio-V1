@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 1vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    font-size: 4em;
+}
+small{
+    font-size: 2.2em;
+}
+h3{
+    display: inline-block;
+    margin:10px 15px;
+    color: black;
+    font-size: 5em;
+    
+}
+h4{
+    display: block;
+    margin:10px 15px;
+    color: black;
+    font-size: 3em;
+    
+}
+
+a{
+    font-size: 3.5em;
+    text-decoration: none;
+    color: inherit;
+}
+i{
+    color:#ec008c;
+    font-size: 2em;
+    margin:0 3px;
+
+}
+img{
+    animation-name: sli;
+    animation-duration: 1.5s;
+}
+.normal-dot{
+    position: relative;
+    z-index: 500;
+    height: .5em;
+    width: .5em;
+    background-color: #ec008c;
+}
+.dot {
+    position: relative;
+    z-index: 500;
+    height: .5em;
+    width: .5em;
+    background-color: #ec008c;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 0;
+    margin: 0 50%;
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    /* anima */
+    /* transition: all 1s ease-in-out; */
+}
+p{
+    font-size:2.5em;
+    padding: 20px;
+    line-height: 2;
+}
+.nav-item{
+    position: relative;
+    z-index: 100;
+    padding: 10px;
+    font-size: 3.5em;
+    text-decoration: none;
+    color: inherit;
+}
+.nav-item:hover{
+    color: #ec008c;
+}
+.active{
+    color: #ec008c;
+    /* transition: all .5s ease-in-out .5s; */
+}
+nav{
+    margin: 10px 0px ;
+    text-align: center;
+}
+
+#profile-info{
+    position: relative;
+    top: 8vh;
+    float: right;
+    margin-right: 25px;
+    animation-name: slideLeft;
+    animation-duration: 1.5s;
+}
+.profile{
+    height:fit-content;
+}
+#about-me-content, #my-skillset-content, #portfolio-content{
+    position: absolute;
+    z-index: 100;
+    margin-left:15px;
+    /* animation-name: sli;
+    animation-duration: 1.5s; */
+    /* transition: all 1s ease-in-out; */
+}
+#my-skillset-content,#portfolio-content{
+    visibility: hidden;
+    display: none;
+}
+
+/* use this on the street pker game */
+@keyframes slideUp{
+    from{
+        transform: translateY(0%);
+        top: 40px;
+
+    }
+
+    to{
+        transform: translateY(100%);
+        top: -6px;
+    }
+} 
+
+@keyframes slideLeft{
+    from{
+        transform: translateY(100%);
+        top: 4vh;
+
+        /* right: 50px; */
+    }
+
+    to{
+        transform: translateY(0%);
+
+        top: 8vh;
+        /* right: 11px; */
+    }
+} 
+
+@keyframes fade{
+    from{
+        color: white;
+        /* right: 50px; */
+    }
+
+    40%{
+        color: rgba(255,255,255,0.5);
+    }
+
+    60%{
+        color:rgba(0,0,0,0.5)
+    }
+
+    to{
+        color:rgba(0,0,0,0.8)
+        /* right: 11px; */
+    }
+}
+
+
+
+/* sli - softLandingImages */
+@keyframes sli{
+    from{
+        transform: scale(0.5);
+        /* padding: 100px; */
+    }
+    to{
+        transform: scale(1);
+    }
+}
+  
