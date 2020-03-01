@@ -19,11 +19,16 @@ h3{
     font-size: 5em;
     
 }
+.portfolio-tabs{
+    display: flex;
+    justify-content: space-around;
+}
 h2{
     display: inline-block;
-    margin:10px 50px;
+    margin:10px 20px;
     color: black;
     font-size: 3em;
+    font-weight: lighter;
 }
 h4{
     display: block;
@@ -33,16 +38,22 @@ h4{
     
 }
 
+
 a{
     font-size: 1em;
     text-decoration: none;
     color: inherit;
 }
+.social-links a{font-size: 3.6em;}
 i{
     color:#ec008c;
     font-size: 2em;
     margin:0 3px;
 
+}
+span.small{
+    font-size: 0.8em;
+    font-weight: lighter;
 }
 img{
     animation-name: sli;
@@ -117,6 +128,16 @@ nav{
 #my-skillset-content,#portfolio-content{
     visibility: hidden;
     display: none;
+}
+
+.portfolio-item img{
+    width: 80%;
+
+
+}
+.portfolio-content{
+    font-size: 2.5em;
+    color: rgba(0,0,0,0.8);
 }
 
 /* use this on the street pker game */
