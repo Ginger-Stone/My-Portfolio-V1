@@ -125,7 +125,7 @@ nav{
     animation-duration: 1.5s; */
     /* transition: all 1s ease-in-out; */
 }
-#my-skillset-content,#portfolio-content{
+#my-skillset-content,#portfolio-content,#design-content,#apis-content,#websites-content{
     visibility: hidden;
     display: none;
 }
